@@ -34,14 +34,25 @@
   font-family: "kalam-bold";
   src: url("../fonts/kalam/Kalam-Bold.ttf");
 }
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/tahoma/Tahoma\ Regular\ font.ttf");
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/century-gothic/GOTHICB0.TTF");
+}
+
 .sp {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Century Gothic";
 }
 .splogo {
   font-family: "kalam-bold";
 }
 .sptext {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Century Gothic";
   text-align: left;
 }
 .spmes {
@@ -229,7 +240,7 @@
 /*----------- General -----------*/
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tahoma";
   color: var(--clr-background);
 }
 
@@ -249,7 +260,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tahoma";
 }
 
 /*---------------  Back to top button ----------------*/
@@ -438,7 +449,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--clr-foreground);
   white-space: nowrap;
   transition: 0.3s;
@@ -456,7 +467,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: #0761d1;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar .dropdown ul {
