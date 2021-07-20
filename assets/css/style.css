@@ -32,7 +32,7 @@
 /*----------------SPECIAL--------------------*/
 @font-face {
   font-family: "kalam-bold";
-  src: url("../fonts/Kalam/Kalam-Bold.ttf");
+  src: url("../fonts/kalam/Kalam-Bold.ttf");
 }
 .sp {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
