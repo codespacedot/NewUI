@@ -61,6 +61,7 @@
 }
 .card {
   background-color: var(--clr-background);
+  border-radius: 0px;
 }
 .card .icon-box {
   text-align: center;

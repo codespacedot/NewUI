@@ -881,3 +881,26 @@ section {
   font-size: 13px;
   color: var(--clr-foreground);
 }
+
+/*--------------Credit---------------*/
+.cred {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: calc(2vh + 1.5vw);
+  color: var(--clr-background);
+  background-color: var(--clr-foreground);
+  font-family: "Century Gothic";
+}
+.cred span {
+  color: #0761d1;
+}
+
+/*-------------------Disable Select------------------*/
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
