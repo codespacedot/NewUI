@@ -241,7 +241,7 @@ a {
 }
 
 a:hover {
-  color: #0761d1;
+  color: var(--clr-foreground);
   text-decoration: none;
 }
 
