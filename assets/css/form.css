@@ -18,7 +18,7 @@
 }
 .submit-btn {
   color: var(--clr-background);
-  background-color: var(--clr-foreground);
+  background-color: #0d6efd;
   border-color: #0d6efd;
   width: 100%;
 }
@@ -54,7 +54,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
   border-color: var(--clr-foreground);
-  box-shadow: 0 0 8px var(--clr-foreground);
+  box-shadow: 0 0 6px var(--clr-foreground);
   outline: 0 none;
 }
 
@@ -106,7 +106,7 @@ input[type="color"]:focus,
   border-bottom-right-radius: 0.25rem;
 }
 .input-group-text {
-  background-color: #0761d1;
+  background-color: var(--clr-background);
   color: var(--clr-foreground);
 }
 #show_hide_password a {
