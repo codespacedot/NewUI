@@ -103,6 +103,26 @@
       preloader.remove();
     });
   }
+
+  //form validation
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
 })();
 
 const themeToggle = document.querySelector("#theme-toggle");
@@ -135,3 +155,19 @@ function setThemePreference() {
 }
 
 document.onload = setThemePreference();
+
+//show_hide_password
+function show_hide_pass() {
+  var pass = document.getElementById("pass-input");
+  var cls = document.getElementById("pass-show");
+
+  if (pass.type == "password") {
+    pass.type = "text";
+    cls.classList.remove("fa-eye-slash");
+    cls.classList.add("fa-eye");
+  } else {
+    pass.type = "password";
+    cls.classList.remove("fa-eye");
+    cls.classList.add("fa-eye-slash");
+  }
+}

@@ -27,7 +27,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/card.css" rel="stylesheet" />
+    <link href="assets/css/form.css" rel="stylesheet" />
 
   </head>
 
@@ -95,142 +95,146 @@
           <!-- Theme Change End-->
         </div>
 
-        <a href="login.html" class="get-started-btn">Log In</a>
+        <a href="#" class="get-started-btn">Log In</a>
       </div>
     </header>
     <!-- End Header -->
 
     <!--  Section  -->
-    <section  class="card" id="year">
-      <div class="container  align-items-center " >
-        
-        <div class="row justify-content-center heading border-bottom">
-          <div
-            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 "
-          >
-            <h1 class="sp">Year</h1>
-          </div>
-        </div>
-        
-
-        <div class="row ">
-          <div class="row justify-content-center heading " style="margin-left: 0px; margin-right: 0px;">
+    <section  class="form" id="form">
+      <div class="d-flex align-items-center justify-content-center">
+          <div class="col-lg-6 col-xl-6 d-none d-lg-block   left-content"> <div class="row justify-content-center disable-select">
             <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 "
+              class="col-lg-6 col-md-12"
+              style="margin-top: 7%;"
             >
-              <h2 class="sp">Semister N</h2>
+              <h1 class="sptext">Connect.</h1>
+              <h1 class="sptext" style="color: #0761d1">Code.</h1>
+              <h1 class="sptext">Execute.</h1>
             </div>
           </div>
+        </div>
+          <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+            
 
-          <div
-          class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
-        >
-          <div class="icon-box">
-            <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
-            
-           <div class="none"> <p>
-            <a href="#">Computer Graphics and Multimedia Techniques Lab</a>
-            
-          </p></div>
-            
+            <form class="row g-2 needs-validation" novalidate>
+              <div class="justify-content-center heading ">
+                <div
+                  class="col-12 col-lg-10 col-md-12 bottom "
+                >
+                  <h1 class="sp">Sign Up</h1>
+                </div>
+              </div>
+              <div class=" col-6 col-lg-5 col-md-6 bottom ">
+                <div class="form-outline ">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="Frist Name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Provide valid Frist Name.</div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-5 col-md-6 bottom ">
+                <div class="form-outline ">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="Last Name"
+                    required
+                  />
+  
+                  <div class="invalid-feedback">Please Provide valid Last Name.</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-10 col-md-12 bottom">
+                <div class="input-group form-outline ">
+                  <span class="input-group-text" id="inputGroupPrepend">Date of Birth</span>
+                  <input type="text" class="form-control"
+                  placeholder="05/10/1997"
+                  required  id="datepicker" />
+                  <div class="invalid-feedback">Please provide a valid Date.</div>
+                  <div class="valid-feedback">Great! Still check for correct Date.</div>
+                  
+                </div>
+              </div>
+              <div class="col-12 col-lg-10 col-md-12 bottom">
+                <div class="form-outline ">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustom05"
+                    placeholder="Email Address"
+                    required
+                  />
+                  
+                  <div class="invalid-feedback">Please provide a valid Email Address.</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-10 col-md-12 bottom">
+                <div class="input-group mb-2" id="show_hide_password">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="pass-input"
+                    placeholder="Password"
+                    required
+                  />
+                  <span class="input-group-text pass-link" > <a href="#" onclick="show_hide_pass();"><i id="pass-show" class="fa fa-eye-slash" aria-hidden="true"></i></a></span>
+                  <div class="invalid-feedback">Passwords Does not match.</div>
+                </div>
+                  
+                  
+              
+              </div>
+
+              <div class="col-12 col-lg-10 col-md-12 bottom">
+                <div class="form-outline ">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationCustom07"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                  
+                  <div class="invalid-feedback">Passwords Does not match.</div>
+                </div>
+              </div>
+              
+
+              <div class="col-12 col-lg-10 col-md-12 bottom">
+                <button class="submit-btn btn" type="submit">Sign Up</button>
+              </div>
+              <div  class="col-12 col-lg-10 col-md-12 bottom form-link  align-items-center justify-content-center">
+                <p>
+                  <a href="login.html">Already have an account? <span>Log In</span></a>
+                  <br>
+                  <a href="terms.html"> By Signing Up you agree with our <span>Terms </span> and <span>Data Privacy</span>.</a>
+                </p>
+                </div>
+            </form>
+           
+
+
           </div>
-        </div>
-
-
-         
-        <div
-        class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
-      >
-        <div class="icon-box">
-          <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
           
-          <div class="none"> <p>
-            <a href="#">Computer Graphics lab</a>
-            
-          </p></div>
-          
-        </div>
       </div>
-
-      <div
-      class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
-    >
-      <div class="icon-box">
-        <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
-        
-        <div class="none"> <p>
-          <a href="#">Computer Graphics lab</a>
-          
-        </p></div>
-        
-      </div>
-    </div>
       
-    <div
-    class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
-  >
-    <div class="icon-box">
-      <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
-      
-      <div class="none"> <p>
-        <a href="#">Computer Graphics lab</a>
-        
-      </p></div>
-      
-    </div>
-  </div>
-
-  <div
-  class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
->
-  <div class="icon-box">
-    <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
-    
-    <div class="none"> <p>
-      <a href="#">Computer Graphics lab</a>
-      
-    </p></div>
-    
-  </div>
-</div> 
-
-
-<div class="row justify-content-center heading " style="margin-left: 0px; margin-right: 0px;">
-  <div
-    class="col-xl-4 col-lg-4 col-md-6 col-sm-6 "
-  >
-    <h2 class="sp">Semister N+1</h2>
-  </div>
-</div>
-
-<div
-class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
->
-<div class="icon-box">
-  <div class="icon"> <h4><a href="#">CG</a></h4>   </div>
-  
- <div class="none"> <p>
-  <a href="#">Computer Graphics and Multimedia Techniques Lab</a>
-  
-</p></div>
-  
-</div>
-</div>
-  
-          
-        </div>
-      </div>
     </section>
     <!-- End Section -->
 
-   
     
 
     <!-- Footer -->
     <footer id="footer">
-      <div class="cred disable-select">
+      <div class=" d-lg-none d-xl-none"><div class="cred disable-select">
         Connect. <span> Code. </span> Execute.
-      </div>
+      </div></div>
+
       <div class="footer-top">
         <div class="container">
           <div class="row">
@@ -389,5 +393,7 @@ class="col-lg-4 col-md-4 d-flex align-items-stretch  cardspace"
 
     <!--  Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/datepicker.js"></script>
   </body>
 </html>

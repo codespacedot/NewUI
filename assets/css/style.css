@@ -290,36 +290,6 @@ h6 {
 
 /*------------------ Preloader -------------------*/
 
-#preloader {
-  color: var(--clr-foreground);
-  font-family: "kalam-bold";
-  font-size: 20vh;
-  opacity: 0.8;
-}
-#preloader span {
-  display: inline-block;
-  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
-  animation: pulse 0.4s alternate infinite ease-in-out;
-}
-#preloader span:nth-child(odd) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-@-webkit-keyframes pulse {
-  to {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-}
-@keyframes pulse {
-  to {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-}
-
 /*------------- Header -----------*/
 #header {
   transition: all 0.5s;
