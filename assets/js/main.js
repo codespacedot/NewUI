@@ -94,16 +94,6 @@
     true
   );
 
-  /**
-   * Preloader
-   */
-  let preloader = select("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
-
   //form validation
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -127,12 +117,6 @@
 
 const themeToggle = document.querySelector("#theme-toggle");
 
-themeToggle.addEventListener("click", () => {
-  document.body.classList.contains("light-theme")
-    ? enableDarkMode()
-    : enableLightMode();
-});
-
 function enableDarkMode() {
   document.body.classList.remove("light-theme");
   document.body.classList.add("dark-theme");
@@ -155,6 +139,12 @@ function setThemePreference() {
 }
 
 document.onload = setThemePreference();
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.contains("light-theme")
+    ? enableDarkMode()
+    : enableLightMode();
+});
 
 //show_hide_password
 function show_hide_pass() {
