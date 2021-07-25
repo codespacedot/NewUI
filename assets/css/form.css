@@ -112,3 +112,9 @@ input[type="color"]:focus,
 #show_hide_password a {
   color: var(--clr-foreground) !important;
 }
+
+.pass-link {
+  border: none;
+  background-color: var(--clr-background);
+  color: var(--clr-foreground);
+}
