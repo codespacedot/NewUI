@@ -4,6 +4,8 @@
 
 ## removed js/css
 
+#### datepicker
+
 #### Nil
 
 ## added files
