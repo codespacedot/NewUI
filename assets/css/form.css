@@ -155,9 +155,9 @@ input[type="color"]:focus,
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
   outline: 0;
-  border: solid 2px var(--clr-foreground);
+  border: solid 1px var(--clr-foreground);
 }
 .close-btn {
   color: var(--clr-foreground);
@@ -168,10 +168,10 @@ input[type="color"]:focus,
   font-size: 1.5rem;
 }
 .sucess i {
-  color: #08ff31;
+  color: #0761d1;
 }
 .fail i {
-  color: #ff5555;
+  color: #e00;
 }
 .sucess,
 .fail {

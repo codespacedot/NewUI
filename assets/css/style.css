@@ -1073,3 +1073,15 @@ section {
   padding: 0.5rem 1rem;
   color: var(--clr-foreground);
 }
+.nav-tabs {
+  border-bottom: 1px solid var(--clr-foreground);
+}
+.back-btn a {
+  color: var(--clr-grey);
+  font-size: 1rem;
+  margin-top: 4%;
+  margin-left: 10%;
+}
+.back-btn a:hover {
+  color: var(--clr-foreground);
+}
