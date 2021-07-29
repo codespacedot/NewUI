@@ -117,7 +117,7 @@
           <div class="col-lg-6 col-md-8 col-sm-8 d-flex align-items-center justify-content-center center-block" >
             
 
-            <form class="row g-2 needs-validation center-block" novalidate style="margin-top: 10%;">
+            <form class="row g-2 needs-validation center-block" novalidate style="margin-top: 10%;" id="resetpass">
               <div class="justify-content-center col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 heading bottom">
                
                   <h1 class="sp">Reset Password</h1>
@@ -130,12 +130,14 @@
                     <input
                       type="password"
                       class="form-control"
-                      id="validationCustom07"
+                      id="pass-input-confirm"
                       placeholder="New Password"
+                      minlength="8"
+                      maxlength="12"
                       required
                     />
                     
-                    <div class="invalid-feedback">Passwords Does not match.</div>
+                    <div class="invalid-feedback" id="message1">Password should be 8 Character long.</div>
                   </div>
               </div>
 
@@ -146,10 +148,12 @@
                       class="form-control"
                       id="pass-input"
                       placeholder="Confirm New Password"
+                      minlength="8"
+                      maxlength="12"
                       required
                     />
-                    <span class="input-group-text " > <button class="pass-link" type="button" onclick="show_hide_pass();"><i id="pass-show" class="fa fa-eye-slash" aria-hidden="true"></i></button></span>
-                    <div class="invalid-feedback">Passwords Does not match.</div>
+                    <span class="input-group-text " > <button class="pass-link" type="button" id="show_hide_pass"><i id="pass-show" class="fa fa-eye-slash" aria-hidden="true"></i></button></span>
+                    <div class="invalid-feedback" id="message2">Password should be 8 Character long.</div>
                   </div>
               </div>
 
@@ -160,6 +164,7 @@
                   class="form-control"
                   id="validationCustom09"
                   placeholder="Verification Code"
+                  
                   required
                 />
                 
@@ -168,13 +173,10 @@
           </div>
 
 
-
-
-              
               
 
               <div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 bottom">
-                <button class="submit-btn btn" type="submit" onclick="passreset();">Submit</button>
+                <button class="submit-btn btn" id="reset-pass" type="submit">Reset Password</button>
               </div>
               <div  class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 bottom form-link  align-items-center justify-content-center">
                 <p>
@@ -358,6 +360,6 @@
     <!--  Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <script src="assets/js/datepicker.js"></script>
+  
   </body>
 </html>

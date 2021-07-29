@@ -4,10 +4,10 @@
 
 ## removed js/css
 
-#### datepicker
+#### nil
 
 #### Nil
 
 ## added files
 
-#### resetpass and forgot pass
+#### modal (just sample)

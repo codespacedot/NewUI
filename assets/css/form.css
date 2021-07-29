@@ -118,3 +118,75 @@ input[type="color"]:focus,
   background-color: var(--clr-background);
   color: var(--clr-foreground);
 }
+.mod-head h5 {
+  font-size: calc(5px + 1rem);
+}
+.mod-head {
+  display: flex;
+  align-items: left;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+  border-bottom: solid 1px var(--clr-foreground);
+  color: var(--clr-foreground);
+  background-color: var(--clr-background);
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0px;
+  color: var(--clr-background);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+  border: solid 2px var(--clr-foreground);
+}
+.close-btn {
+  color: var(--clr-foreground);
+  background-color: var(--clr-background);
+  border: none;
+}
+.close-btn i {
+  font-size: 1.5rem;
+}
+.sucess i {
+  color: #08ff31;
+}
+.fail i {
+  color: #ff5555;
+}
+.sucess,
+.fail {
+  background-color: var(--clr-background);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+#modal-message h4 {
+  font-size: 2rem;
+  color: var(--clr-foreground);
+  text-align: center;
+}
+#modal-message h5 {
+  font-size: 1rem;
+  color: var(--clr-foreground);
+  text-align: center;
+}

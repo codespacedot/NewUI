@@ -132,6 +132,7 @@
                     class="form-control"
                     id="validationCustom01"
                     placeholder="Frist Name"
+                    pattern="[a-z]{2,}"
                     required
                   />
                   <div class="invalid-feedback">Please Provide valid Frist Name.</div>
@@ -144,6 +145,7 @@
                     class="form-control"
                     id="validationCustom02"
                     placeholder="Last Name"
+                    pattern="[a-z]{2,}"
                     required
                   />
   
@@ -171,10 +173,12 @@
                     class="form-control"
                     id="pass-input"
                     placeholder="Password"
+                    minlength="5"
+                   
                     required
                   />
-                  <span class="input-group-text " > <button class="pass-link" type="button" onclick="show_hide_pass();"><i id="pass-show" class="fa fa-eye-slash" aria-hidden="true"></i></button></span>
-                    <div class="invalid-feedback">Passwords Does not match.</div>
+                  <span class="input-group-text " > <button class="pass-link" type="button" id="show_hide_pass"><i id="pass-show" class="fa fa-eye-slash" aria-hidden="true"></i></button></span>
+                    <div class="invalid-feedback" id="inval-mess1">Password should be 5 Character long.</div>
                 </div>
                   
                   
@@ -186,18 +190,20 @@
                   <input
                     type="password"
                     class="form-control"
-                    id="validationCustom07"
+                    id="pass-input-confirm"
                     placeholder="Confirm Password"
+                    minlength="5"
+                  
                     required
                   />
                   
-                  <div class="invalid-feedback">Passwords Does not match.</div>
+                  <div class="invalid-feedback" id="inval-mess2">Password should be 5 Character long.</div>
                 </div>
               </div>
               
 
               <div class="col-12 col-lg-10 col-md-12 bottom">
-                <button class="submit-btn btn" type="submit">Sign Up</button>
+                <button class="submit-btn btn" id="signup" type="submit">Sign Up</button>
               </div>
               <div  class="col-12 col-lg-10 col-md-12 bottom form-link  align-items-center justify-content-center">
                 <p>

@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>CodeSpace</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/card.css" rel="stylesheet" />
+    <link href="assets/css/form.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div
+        class="container d-flex align-items-center justify-content-lg-between"
+      >
+        <h1 class="logo me-auto sp me-lg-0">
+          <a class="splogo" href="index.html">&lt;/&gt;</a>
+          <a href="index.html">CodeSpace</a>
+        </h1>
+        <!-- Uncomment below if you want to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Academics</span> </i
+              ></a>
+              <ul>
+                <li><a href="year.html">Final Year</a></li>
+                <li><a href="year.html">Third Year</a></li>
+                <li><a href="year.html">Second Year</a></li>
+                <li><a href="year.html">Upload Resources</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Placements</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Certification</a>
+            </li>
+          </ul>
+          <i class="fa fa-bars mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <div class="d-flex align-items-right justify-content-lg-end">
+          <!-- Change Theme -->
+          <button
+            class="d-flex align-items-center justify-content-center"
+            id="theme-toggle"
+            style="height: 42px; left: 0px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 22.39 22.39"
+            >
+              <g class="toggle-sun">
+                <path
+                  d="M19.13,7.93V3.28H14.46L11.21,0,7.93,3.28H3.28V7.93L0,11.21l3.28,3.25V19.1H7.93l3.28,3.29,3.25-3.26H19.1V14.46l3.29-3.29Zm-7.94,9.39a6.16,6.16,0,0,1-6.13-6.19,5.92,5.92,0,0,1,.48-2.35,5.73,5.73,0,0,1,3.38-3.3,6.2,6.2,0,0,1,7.65,8.79,5.63,5.63,0,0,1-5,3.05Z"
+                />
+              </g>
+              <g class="toggle-circle">
+                <circle class="cls-1" cx="11.19" cy="11.19" r="4.93" />
+              </g>
+            </svg>
+          </button>
+          <!-- Theme Change End-->
+        </div>
+
+        <a href="login.html" class="get-started-btn">Log In</a>
+      </div>
+    </header>
+    <!-- End Header -->
+
+     <!--  Section  -->
+     <section  class="card" id="year">
+      
+      <!-- Button trigger modal -->
+      <div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 align-items-center justify-content-center">
+        <button type="button " id="modal-btn" class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#genral-modal" style="margin-left: 60%; margin-top: 10px;">
+          Launch Sucess/Fail Modal
+        </button>
+        
+      </div>
+      
+      
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="genral-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+             <div class="mod-head"> <h5 style="padding-top: 2px;" class="splogo" > &lt;/&gt; </h5>
+              <h5 class="sp" >&nbsp;CodeSpace </h5></div>
+      
+              <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"> <i class="fa fa-times fa-2x"></i> </button>
+              
+            </div>
+            <div class="modal-body">
+              
+              <div id="modal-message" class=" fail align-items-center justify-content-center"> <i class="fa fa-times-circle-o fa-2x "> <h4> Failed</h4> </i> <h5>Failed Message Here</h5>  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      
+      
+      
+      
+      
+      
+            </div>
+          </section>
+          <!-- End Section -->
+
+   
+    
+
+    
+
+    <!--  JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // for sucess fail modal
+      // Get the modal
+var modal1 = document.getElementById("modal-message");
+
+// Get the button that opens the modal
+var btn = document.getElementById("modal-btn");
+
+
+// When the user clicks on the button, open the modal
+// add fail if its failed 
+const state="sucess"; // or "fail"
+const messagebig="Great!"; // or any other
+const messagesmall="You created your account" ; // or any other
+btn.onclick=show_gen_modal(state, messagebig, messagesmall);
+
+ function show_gen_modal(state,messagebig, messagesmall) {
+  var message = document.getElementById("modal-message");
+   if (state=="sucess"){
+    message.classList.remove("fail");
+    message.classList.add("sucess");
+    message.getElementsByTagName("i")[0].classList.remove("fa-times-circle-o")
+    message.getElementsByTagName("i")[0].classList.add("fa-check-circle-o")
+   }else{
+    message.classList.remove("sucess");
+    message.classList.add("fail");
+    message.getElementsByTagName("i")[0].classList.remove("fa-check-circle-o")
+    message.getElementsByTagName("i")[0].classList.add("fa-times-circle-o")
+    
+    
+   }
+   message.getElementsByTagName("h4")[0].innerHTML=messagebig;
+  message.getElementsByTagName("h5")[0].innerHTML=messagesmall;
+  modal1.style.display = "block";
+}
+    </script>
+  </body>
+</html>
