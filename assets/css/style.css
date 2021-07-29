@@ -1060,3 +1060,16 @@ section {
   letter-spacing: 0.5px;
   font-size: 30px;
 }
+
+/*---------tab--------*/
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--clr-background);
+  background-color: var(--clr-foreground);
+  border-color: var(--clr-foreground);
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--clr-foreground);
+}

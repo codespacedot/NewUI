@@ -13,3 +13,5 @@
 #### modal (just sample)
 
 ### certification placements about us
+
+### Resourses page added
