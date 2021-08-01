@@ -107,3 +107,65 @@
 .clr-fore a i {
   color: var(--clr-foreground);
 }
+
+/* _____________Profile_________ */
+.gear {
+  padding-right: 1%;
+  color: var(--clr-foreground);
+}
+
+.fa-cog:focus,
+.fa-cog:hover {
+  animation: fa-spin 2s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.profile h6 {
+  display: inline !important;
+}
+.card-profile .icon-box {
+  text-align: center;
+  border: 1px solid var(--clr-foreground);
+  padding: 8px;
+  transition: all ease-in-out 0.3s;
+  background: var(--clr-background);
+  height: auto;
+  border-radius: 7px;
+  min-height: 100px;
+  padding-top: 10px;
+  max-width: 500px;
+}
+.card-profile h2 {
+  color: var(--clr-foreground);
+}
+.profile i {
+  font-size: 45px;
+  padding: 10px;
+}
+.profile i:hover {
+  transform: translateY(-2px);
+}
+.profile h4,
+.profile h6 {
+  padding: 10px;
+}
