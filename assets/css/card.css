@@ -153,8 +153,8 @@
   border-radius: 7px;
   min-height: 100px;
   padding-top: 10px;
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 340px;
+  min-width: 340px;
 }
 .card-profile h2 {
   color: var(--clr-foreground);
