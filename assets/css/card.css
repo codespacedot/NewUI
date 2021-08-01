@@ -114,8 +114,7 @@
   color: var(--clr-foreground);
 }
 
-.fa-cog:focus,
-.fa-cog:hover {
+.fa-cog {
   animation: fa-spin 2s infinite linear;
 }
 
@@ -159,7 +158,7 @@
   color: var(--clr-foreground);
 }
 .profile i {
-  font-size: 45px;
+  font-size: 32px;
   padding: 10px;
 }
 .profile i:hover {
