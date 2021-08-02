@@ -179,6 +179,43 @@
   padding: 5px;
   margin: 10px;
 }
-.skills:hover {
+.skills:hover,
+.skills-change:hover,
+.skills-delete:hover,
+.confirm:hover {
   transform: translateY(-2px);
+}
+
+.skills-change {
+  border: solid 1px #0761d1;
+  color: var(--clr-foreground);
+  border-radius: 0.25rem;
+  background: var(--clr-background);
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+}
+.skills-delete {
+  border: solid 1px #e00;
+  color: var(--clr-foreground);
+  border-radius: 0.25rem;
+  background: #e00;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+}
+.confirm {
+  border: solid 1px #0761d1;
+  color: var(--clr-foreground);
+  border-radius: 0.25rem;
+  background: #0761d1;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.profile-button {
+  border: none;
+  background: var(--clr-background);
+  margin: 5px;
 }

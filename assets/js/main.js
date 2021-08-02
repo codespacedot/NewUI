@@ -172,4 +172,13 @@ if (pass_btn != null) {
   });
 }
 
-// form Validation
+// Open
+function openModal(modal) {
+  document.getElementById(modal).style.display = "block";
+  document.getElementById(modal).classList.add("show");
+}
+// Close
+function closeModal(modal) {
+  document.getElementById(modal).style.display = "none";
+  document.getElementById(modal).classList.remove("show");
+}
