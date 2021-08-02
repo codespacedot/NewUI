@@ -221,3 +221,15 @@ input[type="color"]:focus,
     transform: scale(1);
   }
 }
+
+/* Form Select */
+.form-select {
+  color: var(--clr-foreground);
+  background-color: var(--clr-background);
+}
+#library {
+  display: none;
+}
+#exam {
+  display: none;
+}

@@ -182,3 +182,19 @@ function closeModal(modal) {
   document.getElementById(modal).style.display = "none";
   document.getElementById(modal).classList.remove("show");
 }
+
+// Dynamic Select
+function showDiv(element) {
+  if (element.value == "Library") {
+    document.getElementById("library").style.display = "block";
+    document.getElementById("exam").style.display = "none";
+  } else if (element.value == "Exam") {
+    document.getElementById("library").style.display = "none";
+    document.getElementById("exam").style.display = "block";
+  } else {
+    document.getElementById("library").style.display = "none";
+    document.getElementById("exam").style.display = "none";
+  }
+  // document.getElementById(divId).style.display =
+  //   element.value == "Library" ? "block" : "none";
+}
